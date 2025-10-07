@@ -1,4 +1,4 @@
-[RETROID POCKET FLIP 2 - Tools](./index.md)
+[RETROID POCKET FLIP 2 - Tools](./README.md)
 
 # PRE-INSTALLED APPS
 
