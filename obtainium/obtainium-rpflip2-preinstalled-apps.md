@@ -1,6 +1,4 @@
-[RETROID POCKET FLIP 2 - Tools](./README.md)
-
-# PRE-INSTALLED APPS
+# 📦 Retroid Pocket Flip 2 Pre-Installed Apps
 
 À l'installation de RPFlip2, vous avez la possibilité de sélectionner et d'installer des applications issues d'une liste prédéfinie (aucun téléchargement n'est requis, les fichiers APK étant déjà disponibles sur place).
 

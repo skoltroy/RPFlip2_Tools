@@ -1,7 +1,10 @@
 # 📦 Obtainium Emulation Pack
-__Liste complète des applications__
 
-## 🗂️ Emulator
+Le **Obtainium Emulation Pack** est une collection soigneusement organisée d’applications dédiées à l’émulation, au streaming et aux outils associés pour Android. Ce pack regroupe les meilleurs émulateurs open source — couvrant des consoles comme la PSP, la Wii U, la PlayStation 2, la Dreamcast, la 3DS ou encore la Vita — ainsi que des frontends comme Daijishō et Pegasus pour centraliser vos bibliothèques de jeux. 
+
+Il inclut également des applications utilitaires et des outils de streaming tels que Moonlight et Artemis, permettant de jouer à vos titres PC directement sur mobile. L’objectif de ce pack est de fournir un écosystème complet, libre et auto-hébergé, facilitant la gestion, la mise à jour et l’utilisation d’émulateurs sur Android via Obtainium, tout en respectant la philosophie open source.
+
+## 🗂️ Emulateurs
 
 1. ## Azahar
   * Version : (inconnue)

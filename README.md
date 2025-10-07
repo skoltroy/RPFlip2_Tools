@@ -30,5 +30,6 @@ N'hésitez pas à contribuer ou à explorer le code pour adapter tout à vos bes
 
 ## Liens
 
-* [Liste des applications pré-installées](./PreInstalled_Apps.md)
 * [Obtainium : Gestionnaire d'apps](./Obtainium.md)
+* [Liste des applications pré-installées](./obtainium/obtainium-rpflip2-preinstalled-apps.md)
+* [Pack d'applications](./obtainium/obtainium-emulation-pack.md)
