@@ -1,0 +1,244 @@
+{
+  "apps": [
+    {
+      "name": "Citra",
+      "author": "weihuoya",
+      "description": "Émulateur Nintendo 3DS permettant de jouer à des jeux 3DS sur Android.",
+      "packageName": "com.citra.citra_emu",
+      "webUrl": "https://github.com/weihuoya/citra",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["Citra-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "Citra Enhanced",
+      "author": "ihaveamac",
+      "description": "Version modifiée de Citra avec des fonctionnalités et optimisations supplémentaires pour de meilleures performances.",
+      "packageName": "com.citra.enhanced",
+      "webUrl": "https://github.com/ihaveamac/citra-enhanced",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["Citra-Enhanced-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "Dolphin Emulator",
+      "author": "Dolphin Emulator Team",
+      "description": "Émulateur Nintendo GameCube et Wii, reconnu pour sa compatibilité et ses performances élevées.",
+      "packageName": "org.dolphinemu.dolphinemu",
+      "webUrl": "https://github.com/dolphin-emu/dolphin",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["Dolphin-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "Dolphin for Handheld",
+      "author": "LukeFZ",
+      "description": "Variante optimisée de Dolphin pour les appareils portables, avec interface adaptée.",
+      "packageName": "org.dolphinemu.dolphinemu.handheld",
+      "webUrl": "https://github.com/LukeFZ/dolphin-handheld",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["Dolphin-Handheld-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "DuckStation",
+      "author": "Stenzek",
+      "description": "Émulateur Sony PlayStation 1 axé sur la précision et la rapidité, avec support HD.",
+      "packageName": "com.github.stenzek.duckstation",
+      "webUrl": "https://github.com/stenzek/duckstation",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["DuckStation-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "EasyRPG Player",
+      "author": "EasyRPG Team",
+      "description": "Lecteur de jeux créés avec RPG Maker 2000/2003, permettant de jouer à des RPG classiques.",
+      "packageName": "org.easyrpg.player",
+      "webUrl": "https://github.com/EasyRPG/Player",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["EasyRPG-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "Flycast",
+      "author": "Flyinghead",
+      "description": "Émulateur Sega Dreamcast, Naomi et Atomiswave, supportant de nombreux jeux et fonctionnalités réseau.",
+      "packageName": "com.flycast.emulator",
+      "webUrl": "https://github.com/flyinghead/flycast",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["Flycast-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "M64Plus FZ",
+      "author": "Fzurita",
+      "description": "Émulateur Nintendo 64 avec de nombreux plugins et options de personnalisation.",
+      "packageName": "org.mupen64plusae.v3.fzurita",
+      "webUrl": "https://github.com/fzurita/mupen64plus-ae",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["M64Plus-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "MiXplorer",
+      "author": "HootanParsa",
+      "description": "Gestionnaire de fichiers avancé pour Android, supportant de nombreux formats et services cloud.",
+      "packageName": "com.mixplorer.silver",
+      "webUrl": "https://forum.xda-developers.com/t/app-2-2-mixplorer-v6-x-released-fully-featured-file-manager.1523691/",
+      "updateMethod": "Web",
+      "additionalFilePatterns": ["MiXplorer-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "Moonlight Game Streaming",
+      "author": "Moonlight Team",
+      "description": "Application de streaming permettant de jouer à des jeux PC sur Android via NVIDIA GameStream.",
+      "packageName": "com.limelight",
+      "webUrl": "https://github.com/moonlight-stream/moonlight-android",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["Moonlight-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "PojavLauncher (Minecraft)",
+      "author": "PojavLauncherTeam",
+      "description": "Lanceur alternatif pour Minecraft, permettant d’installer et de jouer à différentes versions.",
+      "packageName": "net.kdt.pojavlaunch",
+      "webUrl": "https://github.com/PojavLauncherTeam/PojavLauncher",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["PojavLauncher-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "PokeMMO",
+      "author": "PokeMMO Team",
+      "description": "Jeu en ligne massivement multijoueur basé sur Pokémon, combinant plusieurs générations.",
+      "packageName": "com.pokemmo.client",
+      "webUrl": "https://pokemmo.com/fr/downloads/",
+      "updateMethod": "Web",
+      "additionalFilePatterns": ["PokeMMO-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "PPSSPP",
+      "author": "Hrydgard",
+      "description": "Émulateur Sony PSP, offrant une compatibilité étendue et des options graphiques avancées.",
+      "packageName": "org.ppsspp.ppsspp",
+      "webUrl": "https://github.com/hrydgard/ppsspp",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["PPSSPP-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "RetroArch",
+      "author": "Libretro",
+      "description": "Plateforme d’émulation multi-systèmes, regroupant de nombreux cœurs pour consoles et ordinateurs rétro.",
+      "packageName": "com.retroarch",
+      "webUrl": "https://github.com/libretro/RetroArch",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["RetroArch-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "San Andreas Unity",
+      "author": "tx00100xt",
+      "description": "Portage open source du moteur de GTA San Andreas, permettant d’y jouer sur Android avec des améliorations graphiques.",
+      "packageName": "com.rockstargames.gtasa.unity",
+      "webUrl": "https://github.com/tx00100xt/SAUnity",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["SAUnity-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "Steam Link",
+      "author": "Valve",
+      "description": "Application officielle de Valve pour streamer les jeux Steam de votre PC vers votre appareil Android.",
+      "packageName": "com.valvesoftware.steamlink",
+      "webUrl": "https://store.steampowered.com/steamlink/about",
+      "updateMethod": "Web",
+      "additionalFilePatterns": ["SteamLink-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "Unciv",
+      "author": "Yairm210",
+      "description": "Recréation open source du jeu Civilization V, optimisée pour les appareils mobiles.",
+      "packageName": "com.unciv.app",
+      "webUrl": "https://github.com/yairm210/Unciv",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["Unciv-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "VCMI",
+      "author": "VCMI Team",
+      "description": "Moteur open source pour Heroes of Might and Magic III, permettant d’y jouer sur Android avec de nombreuses extensions.",
+      "packageName": "is.xyz.vcmi",
+      "webUrl": "https://github.com/vcmi/vcmi",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["VCMI-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "AetherSX2",
+      "author": "AetherSX2 Team",
+      "description": "Émulateur Sony PlayStation 2 performant et optimisé pour Android.",
+      "packageName": "joypad.aethersx2",
+      "webUrl": "https://aethersx2.com/",
+      "updateMethod": "Web",
+      "additionalFilePatterns": ["AetherSX2-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "OWN Nightly",
+      "author": "Rocka",
+      "description": "Version nocturne d’Open World Navigation, outil de navigation et gestion de fichiers pour Android.",
+      "packageName": "is.xyz.omw_nightly",
+      "webUrl": "https://gitlab.com/rocka/omw",
+      "updateMethod": "GitLabReleases",
+      "additionalFilePatterns": ["OWN-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "OpenBOR",
+      "author": "DCurrent",
+      "description": "Moteur open source pour jeux beat’em up, compatible avec de nombreux titres rétro personnalisés.",
+      "packageName": "com.openbor.engine",
+      "webUrl": "https://github.com/DCurrent/openbor",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["OpenBOR-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "ScummVM",
+      "author": "ScummVM Team",
+      "description": "Interpréteur permettant de jouer à des jeux d’aventure classiques (LucasArts, Sierra, etc.) sur Android.",
+      "packageName": "org.scummvm.scummvm",
+      "webUrl": "https://github.com/scummvm/scummvm",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["ScummVM-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "Serious Sam TFE",
+      "author": "aarcangeli",
+      "description": "Portage du jeu de tir Serious Sam: The First Encounter, jouable sur Android avec contrôles adaptés.",
+      "packageName": "com.serioussam.tfe",
+      "webUrl": "https://github.com/aarcangeli/Serious-Sam-Android",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["SeriousSam-.*\\.apk"],
+      "extraFilesToKeep": []
+    },
+    {
+      "name": "Shattered Pixel Dungeon",
+      "author": "00-Evan",
+      "description": "Roguelike open source inspiré de Pixel Dungeon, avec de nombreuses améliorations, classes, objets et donjons générés aléatoirement. Jeu gratuit, sans pub ni achats intégrés.",
+      "packageName": "com.shatteredpixel.shatteredpixeldungeon",
+      "webUrl": "https://github.com/00-Evan/shattered-pixel-dungeon",
+      "updateMethod": "GitHubReleases",
+      "additionalFilePatterns": ["ShatteredPixelDungeon-.*\\.apk"],
+      "extraFilesToKeep": []
+    }
+  ]
+}
