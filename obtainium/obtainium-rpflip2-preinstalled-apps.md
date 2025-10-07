@@ -4,6 +4,7 @@
 
 Voici la liste exhaustive au 07/10/2025, pour que vous sachiez précisément ce que vous installez.
 
+* Fichier à importer (url) dans Obtainium : [obtainium-rpflip2-preinstalled-apps.json](./obtainium-rpflip2-preinstalled-apps.json)
 ___
 
 1. ## Citra

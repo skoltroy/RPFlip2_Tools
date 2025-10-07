@@ -4,6 +4,8 @@ Le **Obtainium Emulation Pack** est une collection soigneusement organisée d’
 
 Il inclut également des applications utilitaires et des outils de streaming tels que Moonlight et Artemis, permettant de jouer à vos titres PC directement sur mobile. L’objectif de ce pack est de fournir un écosystème complet, libre et auto-hébergé, facilitant la gestion, la mise à jour et l’utilisation d’émulateurs sur Android via Obtainium, tout en respectant la philosophie open source.
 
+* Fichier à importer (url) dans Obtainium : [obtainium-emulation-pack.json](./obtainium-emulation-pack.json)
+
 ## 🗂️ Emulateurs
 
 1. ## Azahar
