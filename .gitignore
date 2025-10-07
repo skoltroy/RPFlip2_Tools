@@ -1,1 +1,4 @@
-/draft
+.draft/
+*.code-workspace
+.vscode/
+.git/
