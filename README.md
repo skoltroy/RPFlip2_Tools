@@ -2,7 +2,7 @@
 
 ## Présentation
 
-<center><img src="https://www.goretroid.com/cdn/shop/files/4_ba0d5be9-d80f-46f4-aee1-6c5c019d7363_1024x1024@2x.jpg?v=1741931343" width="400px" height="400px"></center>
+<center><img src="https://www.goretroid.com/cdn/shop/files/4_ba0d5be9-d80f-46f4-aee1-6c5c019d7363_1024x1024@2x.jpg?v=1741931343" width="400px" height="400px" style="display: block; margin: 0 auto"></center>
 
 __Le Retroid Pocket Flip 2__ est une console de jeu portable au format clamshell (style flip, inspiré des anciens Game Boy), conçue pour l'émulation de jeux rétro et classiques. Elle permet de revivre des titres de consoles comme la Nintendo DS, Game Boy Advance, PlayStation 1, et bien plus, avec une expérience mobile et ergonomique. Fabriquée par Retroid, cette console cible les passionnés de rétrogaming qui souhaitent une alternative compacte et puissante aux appareils modernes.
 
