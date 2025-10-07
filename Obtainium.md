@@ -9,7 +9,7 @@ __Gestionnaire d'Applications Open-Source__
 
 Contrairement aux stores traditionnels, Obtainium récupère les versions les plus récentes des apps en vérifiant automatiquement les mises à jour sur les repositories en ligne (par exemple, via des liens RSS, GitHub Releases ou des pages web). C'est un outil idéal pour les utilisateurs avancés qui veulent éviter les trackers, les pubs ou les restrictions des stores propriétaires.
 
-Développé par une communauté open-source, Obtainium est léger, respectueux de la vie privée et hautement personnalisable. Il supporte l'importation de fichiers de configuration au format JSON, ce qui permet de gérer facilement une liste d'applications prédéfinies. Vous pouvez l'installer via son repository GitHub officiel : [github.com/ImranR98/Obtainium](https://github.com/ImranR98/Obtainium).
+Développé par une communauté open-source, **Obtainium** est léger, respectueux de la vie privée et hautement personnalisable. Il supporte l'importation de fichiers de configuration au format JSON, ce qui permet de gérer facilement une liste d'applications prédéfinies. Vous pouvez l'installer via son repository GitHub officiel : [github.com/ImranR98/Obtainium](https://github.com/ImranR98/Obtainium) - __ARMv8__.
 
 ## Pourquoi Utiliser Obtainium sur le Retroid Pocket Flip 2 ?
 
