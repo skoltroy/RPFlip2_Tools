@@ -1,7 +1,7 @@
 [RETROID POCKET FLIP 2 - Tools](./README.md)
 
 # OBTAINIUM
-__Gestionnaire d'Applications Open-Source__
+> Gestionnaire d'Applications Open-Source
 
 ## Qu'est-ce qu'Obtainium ?
 
@@ -38,7 +38,7 @@ Pour simplifier la personnalisation, nous avons préparé un fichier JSON dédi�
 
 Ce fichier liste des apps open-source essentielles pour compléter ou remplacer les pré-installées : émulateurs, launchers, optimiseurs et outils de gestion. 
 
-- **Téléchargez le fichier JSON ici** : [retroid-flip2-apps.json](./obtainium/retroid-flip2-apps.json) (fichier hébergé dans ce repository public).
+- **Téléchargez le fichier JSON ici** : [obtainium-emulation-pack.json](./obtainium-emulation-pack.json) (fichier hébergé dans ce repository public).
 
 ### Contenu du Fichier JSON (Exemple Aperçu)
 Le JSON contient des apps triées par catégorie. Voici un extrait simplifié (format Obtainium standard) :
@@ -73,14 +73,6 @@ Le JSON contient des apps triées par catégorie. Voici un extrait simplifié (f
       "webUrl": "https://github.com/AetherSX2/AetherSX2",
       "updateMethod": "GitHubReleases",
       "additionalFilePatterns": ["AetherSX2-.*\\.apk"]
-    },
-    {
-      "name": "Moonlight Game Streaming",
-      "author": "Moonlight GameStream",
-      "description": "Streaming de jeux PC vers la console",
-      "packageName": "com.limelight",
-      "webUrl": "https://github.com/moonlight-stream/moonlight-android",
-      "updateMethod": "GitHubReleases"
     }
     // ... Autres apps : Dolphin (GameCube/Wii), ES-DE (gestion fichiers), etc.
   ]

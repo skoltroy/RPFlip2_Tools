@@ -6,9 +6,11 @@
 
 __Le Retroid Pocket Flip 2__ est une console de jeu portable au format clamshell (style flip, inspiré des anciens Game Boy), conçue pour l'émulation de jeux rétro et classiques. Elle permet de revivre des titres de consoles comme la Nintendo DS, Game Boy Advance, PlayStation 1, et bien plus, avec une expérience mobile et ergonomique. Fabriquée par Retroid, cette console cible les passionnés de rétrogaming qui souhaitent une alternative compacte et puissante aux appareils modernes.
 
-> Pour plus d'informations (et pour l'acheter), consultez le site officiel : https://www.goretroid.com
+Pour plus d'informations (et pour l'acheter), consultez le site officiel : https://www.goretroid.com
 
-## Spécifications de la version Snapdragon 865 (SD865)
+``` Spécifications SD865
+Version Snapdragon 865 (SD865)
+--------------------------------
 Cette variante haut de gamme est équipée du processeur Qualcomm Snapdragon 865, offrant des performances solides pour l'émulation avancée. 
 
 Voici les principales caractéristiques :
@@ -23,13 +25,24 @@ Voici les principales caractéristiques :
 * Système : Android 13 (personnalisable avec des launchers comme Daijisho ou RetroArch).
 * Dimensions et poids : Environ 135 x 85 x 20 mm (fermé), poids d'environ 280 g.
 * Autres : Haut-parleurs stéréo, capteurs (accéléromètre, gyroscope), et compatibilité avec des accessoires comme des docks HDMI.
-___
+```
+
 Ce repository public est une ressource dédiée aux heureux possesseurs d'un Retroid Pocket Flip 2. Il contient une collection d'outils open-source pour personnaliser votre console. 
 
 N'hésitez pas à contribuer ou à explorer le code pour adapter tout à vos besoins !
 
 ## Liens
 
-* [Obtainium : Gestionnaire d'apps](./Obtainium.md)
-* [Liste des applications pré-installées](./obtainium/obtainium-rpflip2-preinstalled-apps.md)
+### Installation
+
+* [Liste des applications pré-installées](./installation/rpflip2-preinstalled-apps.md)
+* [Recommandations sur les applications](./installation/rpflip2-preinstalled-apps-reco.md)
+
+### Gestion des Apps
+
+* [Obtainium : Gestionnaire d'apps](./obtainium/obtainium.md)
 * [Pack d'applications](./obtainium/obtainium-emulation-pack.md)
+
+### Emulateurs Android Retro Gaming
+
+* [Liste d'émulateurs](./android-apps/emulation-list.md)

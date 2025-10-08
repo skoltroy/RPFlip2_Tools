@@ -1,40 +1,68 @@
+[RETROID POCKET FLIP 2 - Tools](../README.md)
+
 # 📦 Retroid Pocket Flip 2 Pre-Installed Apps
 
-À l'installation de RPFlip2, vous avez la possibilité de sélectionner et d'installer des applications issues d'une liste prédéfinie (aucun téléchargement n'est requis, les fichiers APK étant déjà disponibles sur place).
+À l'installation de RPFlip2, vous avez la possibilité de sélectionner et d'installer des applications issues d'une liste prédéfinie (aucun téléchargement n'est requis, les fichiers APK étant déjà disponibles sur la console).
+- Dernière mise à jour : 07/10/2025
 
-Voici la liste exhaustive au 07/10/2025, pour que vous sachiez précisément ce que vous installez.
+## Applications disponibles en pré-installation
 
-* Fichier à importer (url) dans Obtainium : [obtainium-rpflip2-preinstalled-apps.json](./obtainium-rpflip2-preinstalled-apps.json)
-___
+- [Citra](#citra)
+- [Citra Enhanced](#citra-enhanced)
+- [Dolphin Emulator](#dolphin-emulator)
+- [Dolphin for Handled](#dolphin-for-handled)
+- [DuckStation](#duckstation)
+- [EasyRPG Player](#easyrpg-player)
+- [Flycast](#flycast)
+- [M64Plus FZ](#m64plus-fz)
+- [Mixplorer](#mixplorer)
+- [Moonlight Game Streaming](#moonlight-game-streaming)
+- [Poyav launcher (Minecraft)](#poyav-launcher-minecraft)
+- [PokeMMO](#pokemmo)
+- [PPSSPP](#ppsspp)
+- [RetroArch x64 x32](#retroarch-x64-x32)
+- [San Adreas Unity](#san-adreas-unity)
+- [Steam Link](#steam-link)
+- [UNCIV](#unciv)
+- [VCMI](#vcmi)
+- [Aether SX2](#aether-sx2)
+- [OWN Nighly](#own-nighly)
+- [OpenBOR](#openbor)
+- [SCUMM VM](#scumm-vm)
+- [Serious SAM TFE](#serious-sam-tfe)
+- [Shattered Pixel Dungeon](#shattered-pixel-dungeon)
 
-1. ## Citra
+---
+---
+
+## Citra 
   * Version : bed6a4f12
   * Description : Émulateur Nintendo 3DS permettant de jouer à des jeux 3DS sur Android.
   * Playstore : (non disponible)
   * Url : https://citra-emu.org/
   * Github : https://github.com/weihuoya/citra
 
-2. ## Citra Enhanced
+## Citra Enhanced
   * Version : 2.1
   * Description : Version modifiée de Citra avec des fonctionnalités et optimisations supplémentaires pour de meilleures performances.
   * Playstore : (non disponible)
   * Url : https://github.com/ihaveamac/citra-enhanced
   * Github : https://github.com/ihaveamac/citra-enhanced
 
-3. ## Dolphin Emulator
+## Dolphin Emulator
   * Version : 5.0-21383
   * Description : Émulateur Nintendo GameCube et Wii, reconnu pour sa compatibilité et ses performances élevées.
   * Playstore : https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu
   * Github : https://github.com/dolphin-emu/dolphin
 
-4. ## Dolphin for Handled
+## Dolphin for Handled
   * Version : 1.2.1
   * Description : Variante optimisée de Dolphin pour les appareils portables, avec interface adaptée.
   * Url : https://github.com/LukeFZ/dolphin-handheld
   * Playstore : (non disponible)
   * Github : https://github.com/LukeFZ/dolphin-handheld
 
-5. ## DuckStation 
+## DuckStation 
   * Version : 0.1.6289
   * Description : Émulateur Sony PlayStation 1 axé sur la précision et la rapidité, avec support HD.
   * Playstore : https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation
@@ -42,7 +70,7 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation
   * Github : https://github.com/stenzek/duckstation
 
-6. ## EasyRPG Player
+## EasyRPG Player
   * Version : 0.8
   * Description : Lecteur de jeux créés avec RPG Maker 2000/2003, permettant de jouer à des RPG classiques.
   * Playstore : https://play.google.com/store/apps/details?id=org.easyrpg.player
@@ -50,7 +78,7 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=org.easyrpg.player
   * Github : https://github.com/EasyRPG/Player
 
-7. ## Flycast 
+## Flycast 
   * Version : 2.2
   * Description : Émulateur Sega Dreamcast, Naomi et Atomiswave, supportant de nombreux jeux et fonctionnalités réseau.
   * Playstore : https://play.google.com/store/apps/details?id=com.flycast.emulator
@@ -58,7 +86,7 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=com.flycast.emulator
   * Github : https://github.com/flyinghead/flycast
 
-8. ## M64Plus FZ
+## M64Plus FZ
   * Version : 3.0.328 (free)
   * Description : Émulateur Nintendo 64 avec de nombreux plugins et options de personnalisation.
   * Playstore : https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita
@@ -66,7 +94,7 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita
   * Github : https://github.com/fzurita/mupen64plus-ae
 
-9. ## Mixplorer
+## Mixplorer
   * Version : 6.58.0 beta
   * Description : Gestionnaire de fichiers avancé pour Android, supportant de nombreux formats et services cloud.
   * Playstore : https://play.google.com/store/apps/details?id=com.mixplorer.silver
@@ -74,7 +102,7 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=com.mixplorer.silver
   * Github : (non disponible)
 
-10. ## Moonlight Game Streaming
+## Moonlight Game Streaming
   * Version : 12.1.240803
   * Description : Application de streaming permettant de jouer à des jeux PC sur Android via NVIDIA GameStream.
   * Playstore : https://play.google.com/store/apps/details?id=com.limelight
@@ -82,7 +110,7 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=com.limelight
   * Github : https://github.com/moonlight-stream/moonlight-android
 
-11. ## Poyav launcher (Minecraft)
+## Poyav launcher (Minecraft)
   * Version : edelweiss
   * Description : Lanceur alternatif pour Minecraft, permettant d’installer et de jouer à différentes versions.
   * Github : https://github.com/PojavLauncherTeam/PojavLauncher
@@ -90,14 +118,14 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=net.kdt.pojavlaunch
   * Github : https://github.com/PojavLauncherTeam/PojavLauncher
 
-12. ## PokeMMO
+## PokeMMO
   * Version : rev 26211
   * Description : Jeu en ligne massivement multijoueur basé sur Pokémon, combinant plusieurs générations.
   * Url : https://pokemmo.com/fr/downloads/
   * Playstore : (non disponible)
   * Github : (non disponible)
 
-13. ## PPSSPP
+## PPSSPP
   * Version : 1.17
   * Description : Émulateur Sony PSP, offrant une compatibilité étendue et des options graphiques avancées.
   * Playstore : https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp
@@ -105,7 +133,7 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp
   * Github : https://github.com/hrydgard/ppsspp
 
-14. ## RetroArch x64 x32
+## RetroArch x64 x32
   * Version : 1.16.0
   * Description : Plateforme d’émulation multi-systèmes, regroupant de nombreux cœurs pour consoles et ordinateurs rétro.
   * Playstore : https://play.google.com/store/apps/details?id=com.retroarch
@@ -113,7 +141,7 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=com.retroarch
   * Github : https://github.com/libretro/RetroArch
 
-15. ## San Adreas Unity
+## San Adreas Unity
   * Version : 3.6
   * Description : Portage open source du moteur de GTA San Andreas, permettant d’y jouer sur Android avec des améliorations graphiques.
   * Playstore : https://play.google.com/store/apps/details?id=com.rockstargames.gtasa
@@ -121,7 +149,7 @@ ___
   * Playstore : (non disponible)
   * Github : https://github.com/tx00100xt/SAUnity
 
-16. ## Steam Link 
+## Steam Link 
   * Version : 1.3.3
   * Description : Application officielle de Valve pour streamer les jeux Steam de votre PC vers votre appareil Android.
   * Playstore : https://play.google.com/store/apps/details?id=com.valvesoftware.steamlink
@@ -129,7 +157,7 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=com.valvesoftware.steamlink
   * Github : (non disponible)
 
-17. ## UNCIV
+## UNCIV
   * Version : 4.10.11
   * Description : Recréation open source du jeu Civilization V, optimisée pour les appareils mobiles.
   * Playstore : https://play.google.com/store/apps/details?id=com.unciv.app
@@ -137,7 +165,7 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=com.unciv.app
   * Github : https://github.com/yairm210/Unciv
 
-18. ## VCMI
+## VCMI
   * Version : 1.4.2
   * Description : Moteur open source pour Heroes of Might and Magic III, permettant d’y jouer sur Android avec de nombreuses extensions.
   * Playstore : https://play.google.com/store/apps/details?id=is.xyz.vcmi
@@ -145,21 +173,21 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=is.xyz.vcmi
   * Github : https://github.com/vcmi/vcmi
 
-19. ## Aether SX2
+## Aether SX2
   * Version : 1.5.4248
   * Description : Émulateur Sony PlayStation 2 performant et optimisé pour Android.
   * Url : https://aethersx2.com/
   * Playstore : (non disponible)
   * Github : (non disponible)
 
-20. ## OWN Nighly 
+## OWN Nighly 
   * Version : 0.48
   * Description : Version nocturne d’Open World Navigation, outil de navigation et gestion de fichiers pour Android.
   * Url : https://rocka.gitlab.io/fdroid-website/en/packages/is.xyz.omw_nightly/
   * Playstore : (non disponible)
   * Github : https://gitlab.com/rocka/omw
 
-21. ## OpenBOR
+## OpenBOR
   * Version : 1.0.0
   * Description : Moteur open source pour jeux beat’em up, compatible avec de nombreux titres rétro personnalisés.
   * Github : https://github.com/DCurrent/openbor
@@ -167,7 +195,7 @@ ___
   * Playstore : (non disponible)
   * Github : https://github.com/DCurrent/openbor
 
-22. ## SCUMM VM
+## SCUMM VM
   * Version : 2.8.0
   * Description : Interpréteur permettant de jouer à des jeux d’aventure classiques (LucasArts, Sierra, etc.) sur Android.
   * Playstore : https://play.google.com/store/apps/details?id=org.scummvm.scummvm
@@ -175,7 +203,7 @@ ___
   * Playstore : https://play.google.com/store/apps/details?id=org.scummvm.scummvm
   * Github : https://github.com/scummvm/scummvm
 
-23. ## Serious SAM TFE
+## Serious SAM TFE
   * Version : 1.05.2
   * Description : Portage du jeu de tir Serious Sam: The First Encounter, jouable sur Android avec contrôles adaptés.
   * Github : https://github.com/aarcangeli/Serious-Sam-Android
@@ -183,10 +211,9 @@ ___
   * Playstore : (non disponible)
   * Github : https://github.com/aarcangeli/Serious-Sam-Android
 
-24. ## Shattered Pixel Dungeon
+## Shattered Pixel Dungeon
   * Version : 2.3.2
   * Description : Roguelike open source inspiré de Pixel Dungeon, avec de nombreuses améliorations, classes, objets et donjons générés aléatoirement. Jeu gratuit, sans pub ni achats intégrés.
   * Url : https://shatteredpixel.com/
   * Playstore : https://play.google.com/store/apps/details?id=com.shatteredpixel.shatteredpixeldungeon
-  * Github : https://github.com/00-Evan/shattered-pixel-dungeon
-
+  * Github : https://github.com/00-Evan/shattered-pixel-dungeon  
