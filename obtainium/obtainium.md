@@ -36,9 +36,9 @@ Pour une expérience optimale, combinez **Obtainium** avec des launchers comme *
 
 Pour simplifier la personnalisation, nous avons préparé un fichier JSON dédié aux applications adaptées à votre Retroid Pocket Flip 2. 
 
-Ce fichier liste des apps open-source essentielles pour compléter ou remplacer les pré-installées : émulateurs, launchers, optimiseurs et outils de gestion. 
+Ce fichier liste des apps open-source essentielles pour compléter ou remplacer les pré-installées : émulateurs, launchers, optimiseurs et outils de gestion ... 
 
-- **Téléchargez le fichier JSON ici** : [obtainium-emulation-pack.json](./obtainium-emulation-pack.json) (fichier hébergé dans ce repository public).
+- **Téléchargez le fichier JSON ici** : [obtainium-rpflip2-emu-pack](./obtainium-rpflip2-emu-pack.json) (fichier hébergé dans ce repository public).
 
 ### Contenu du Fichier JSON (Exemple Aperçu)
 Le JSON contient des apps triées par catégorie. Voici un extrait simplifié (format Obtainium standard) :
@@ -47,34 +47,28 @@ Le JSON contient des apps triées par catégorie. Voici un extrait simplifié (f
 {
   "apps": [
     {
-      "name": "RetroArch",
-      "author": "Libretro",
-      "description": "Émulateur multi-consoles optimisé pour Retroid (DS, GBA, PS1, etc.)",
-      "packageName": "com.retroarch",
-      "webUrl": "https://github.com/libretro/RetroArch",
-      "updateMethod": "GitHubReleases",
-      "additionalFilePatterns": ["RetroArch_apk_x86_64-.*\\.apk"],
-      "extraFilesToKeep": []
-    },
-    {
-      "name": "Daijisho",
-      "author": "Daijisho Team",
-      "description": "Launcher rétro pour une interface console-like, remplace les apps pré-installées",
-      "packageName": "io.daijishou",
-      "webUrl": "https://github.com/daijishou/daijishou",
-      "updateMethod": "GitHubReleases",
-      "additionalFilePatterns": ["Daijisho-.*\\.apk"]
-    },
-    {
-      "name": "AetherSX2",
-      "author": "AetherSX2 Team",
-      "description": "Émulateur PS2 haute performance pour SD865",
-      "packageName": "joypad.aethersx2",
-      "webUrl": "https://github.com/AetherSX2/AetherSX2",
-      "updateMethod": "GitHubReleases",
-      "additionalFilePatterns": ["AetherSX2-.*\\.apk"]
-    }
-    // ... Autres apps : Dolphin (GameCube/Wii), ES-DE (gestion fichiers), etc.
+            "id": "io.github.lime3ds.android",
+            "url": "https://github.com/azahar-emu/azahar",
+            "author": "azahar-emu",
+            "name": "Azahar",
+            "description": "Émulateur Nintendo 3DS (fork de Citra).",         
+            "categories": [
+                "Emulator"
+            ],
+            "overrideSource": "GitHub"
+        },
+        {
+            "id": "info.cemu.cemu",
+            "url": "https://github.com/SSimco/Cemu",
+            "author": "SSimco",
+            "name": "Cemu",
+            "description": "Émulateur Wii U (Cemu) — émule les jeux Wii U.",           
+            "categories": [
+                "Emulator"
+            ],
+            "overrideSource": "GitHub"
+        },
+    // ... Autres apps : Dolphin (GameCube/Wii) .. etc ..
   ]
 }
 ```
