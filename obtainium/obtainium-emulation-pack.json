@@ -131,13 +131,21 @@
       }
     ],
     "PlayStation 1": [
-      {
-        "id": "net.rpcsx",
-        "url": "https://github.com/RPCSX/rpcsx-ui-android",
-        "author": "RPCSX",
-        "name": "RPCSX",
-        "description": "Émulateur Sony PlayStation (PS1) pour Android (RPCSX).",
-        "preferredApkIndex": 0,
+        {
+            "id": "net.rpcsx",
+            "url": "https://github.com/RPCSX/rpcsx-ui-android",
+            "author": "RPCSX",
+            "name": "RPCSX",
+            "description": "Émulateur Sony PlayStation (PS1) pour Android (RPCSX).",
+            "preferredApkIndex": 0,
+            "additionalSettings": "{\"includePrereleases\":false,\"fallbackToOlderReleases\":true,\"filterReleaseTitlesByRegEx\":\"\",\"filterReleaseNotesByRegEx\":\"\",\"verifyLatestTag\":false,\"sortMethodChoice\":\"date\",\"useLatestAssetDateAsReleaseDate\":false,\"releaseTitleAsVersion\":false,\"trackOnly\":false,\"versionExtractionRegEx\":\"\",\"matchGroupToUse\":\"\",\"versionDetection\":false,\"releaseDateAsVersion\":false,\"useVersionCodeAsOSVersion\":false,\"apkFilterRegEx\":\"\",\"invertAPKFilter\":false,\"autoApkFilterByArch\":true,\"appName\":\"RPCSX\",\"appAuthor\":\"\",\"shizukuPretendToBeGooglePlay\":false,\"allowInsecure\":false,\"exemptFromBackgroundUpdates\":false,\"skipUpdateNotifications\":false,\"about\":\"\",\"refreshBeforeDownload\":false}",
+            "categories": [
+                "Emulator"
+            ],
+            "overrideSource": "GitHub"
+        },
+        {
+            "id": "com.trixarian.nethersx2classic",
             "url": "https://github.com/Trixarian/NetherSX2-classic",
             "author": "Trixarian",
             "name": "NetherSX2 Classic",
