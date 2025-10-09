@@ -41,7 +41,7 @@ N'hésitez pas à contribuer ou à explorer le code pour adapter tout à vos bes
 ### Gestion des Apps
 
 * [Obtainium : Gestionnaire d'apps](./obtainium/obtainium.md)
-* [Pack d'applications](./obtainium/obtainium-emulation-pack.md)
+* [Pack d'applications](./obtainium/obtainium-rpflip2-emu-pack.json)
 
 ### Emulateurs Android Retro Gaming
 
