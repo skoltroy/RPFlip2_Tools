@@ -2,83 +2,177 @@
 
 # EMULATEURS
 
-Ci-dessous un tableau récapitulatif des émulateurs populaires disponibles sous Android (y compris ceux trouvables sur le Play Store pour Android 13) et des projets open-source encore maintenus. 
-
+Ci-dessous un tableau récapitulatif des émulateurs populaires disponibles sous Android (y compris ceux trouvables sur le Play Store pour Android 13) et des projets Gratuit encore maintenus. 
 
 ## Sommaire
 
-- [Sony — PlayStation](#sony-—-playstation)
+- [Arcade / Classic](#classic-computers-adventure)
+  - [Arcade](#arcade)
+  - [Aventure (SCUMM et autres)](#aventure-scumm)
+  - [Commodore 64](#commodore-64)
+  - [Atari 2600](#atari-2600)
+- [Sony](#sony)
+  - [PlayStation 1](#playstation-1)
+  - [PlayStation 2](#playstation-2)
+  - [PSP](#psp)
 - [Nintendo](#nintendo)
-- [Sega & Dreamcast](#sega--dreamcast)
-- [Arcade / Multi-arcade](#arcade--multi-arcade)
-- [Handhelds (GBA / PSP / Others)](#handhelds-gba--psp--others)
-- [Multi-system / Frontends](#multi-system--frontends)
-- [Classic computers & Adventure](#classic-computers--adventure)
+  - [Nintendo 3DS](#nintendo-3ds)
+  - [Nintendo Switch](#nintendo-switch)
+  - [GameCube / Wii](#nintendo-gamecube-wii)
+  - [Nintendo DS](#nintendo-ds)
+  - [Game Boy Advance (GBA)](#nintendo-gba)
+  - [Game Boy / Game Boy Color](#nintendo-gbc)
+  - [Nintendo 64](#nintendo-64)
+- [Sega](#sega)
+  - [Dreamcast](#dreamcast)
+- [Multi-system / Frontends](#multi-frontends)
 
 ---
 
-## Sony — PlayStation
+## Arcade / Classic
 
-| Émulateur | Plateforme(s) | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
-| --- | --- | --- | --- | --- | --- | --- | ---: | --- |
-| DuckStation | PlayStation 1 | Open-source | [Play Store](https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation) | [GitHub](https://github.com/stenzek/duckstation) | [Site](https://www.duckstation.org/) | Open-source | Oui | 😍😀😫 |
-| ePSXe | PlayStation 1 | Payant | [Play Store](https://play.google.com/store/search?q=ePSXe&c=apps) |  | [Site](https://epsxe.com/) | Proprietary | Oui | 😍😀😫 |
-| FPse | PlayStation 1 | Payant | [Play Store](https://play.google.com/store/search?q=FPse&c=apps) |  | [Site](http://www.fpse.com/) | Proprietary | Oui | 😍😀😫 |
-| Aether SX2 | PlayStation 2 | Open-source | (non disponible) |  | [Site](https://aethersx2.com/) | Open-source | Oui (activement) | 😍😀😫 |
+<a id="classic-computers-adventure"></a>
+
+<a id="arcade"></a>
+### Arcade
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| MAME4droid / MAME | Gratuit | (N/A) |  | [Site](https://www.mamedev.org/) | Gratuit | Oui |  |
+| FinalBurn Neo (FBNeo) | Gratuit core | (N/A) | [GitHub](https://github.com/finalburnneo/FBNeo) | [libretro](https://www.libretro.com/) | Gratuit | Oui |  |
+
+<a id="aventure-scumm"></a>
+### Aventure (SCUMM et autres)
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| ScummVM | Gratuit | [Play Store](https://play.google.com/store/apps/details?id=org.scummvm.scummvm) | [GitHub](https://github.com/scummvm/scummvm) | [Site](https://www.scummvm.org/) | Gratuit | Oui |  |
+
+<a id="commodore-64"></a>
+### Commodore 64
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| VICE (C64) | Gratuit | (N/A) |  | [Site](https://vice-emu.sourceforge.io/) | Gratuit | Oui |  |
+
+<a id="atari-2600"></a>
+### Atari 2600
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| Stella (Atari 2600) | Gratuit | (N/A) |  | [Site](https://stella-emu.github.io/) | Gratuit | Oui |  |
+
+## Sony
+
+<a id="sony"></a>
+
+<a id="playstation-1"></a>
+### PlayStation 1
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| DuckStation | Gratuit | [Play Store](https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation) | [GitHub](https://github.com/stenzek/duckstation) | [Site](https://www.duckstation.org/) | Gratuit | Oui |  |
+| ePSXe | Payant | [Play Store](https://play.google.com/store/search?q=ePSXe&c=apps) |  | [Site](https://epsxe.com/) | Payant | Oui |  |
+| FPse | Payant | [Play Store](https://play.google.com/store/search?q=FPse&c=apps) |  | [Site](http://www.fpse.com/) | Payant | Oui |  |
+
+<a id="playstation-2"></a>
+### PlayStation 2
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| Aether SX2 | Gratuit | (N/A) |  | [Site](https://aethersx2.com/) | Gratuit | Oui (activement) |  |
+
+<a id="psp"></a>
+### PSP
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| PPSSPP | Gratuit | [Play Store](https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp) | [GitHub](https://github.com/hrydgard/ppsspp) | [Site](https://www.ppsspp.org/) | Gratuit | Oui |  |
+| PPSSPP Gold | Payant | (N/A) |  | [Buy PPSSPP Gold](https://www.ppsspp.org/buygold) | Payant | Oui |  |
 
 ## Nintendo
 
-| Émulateur | Plateforme(s) | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
-| --- | --- | --- | --- | --- | --- | --- | ---: | --- |
-| Citra | Nintendo 3DS | Open-source | (non disponible) | [GitHub](https://github.com/weihuoya/citra) | [Site](https://citra-emu.org/) | Open-source | Oui | 😍😀😫 |
-| Citra Enhanced | Nintendo 3DS | Fork open-source | (non disponible) | [GitHub](https://github.com/ihaveamac/citra-enhanced) | [GitHub (Mandarine)](https://github.com/mandarine3ds/mandarine) | Open-source | Oui | 😍😀😫 |
-| Yuzu | Nintendo Switch | Open-source (PC) | (non disponible) | [GitHub](https://github.com/yuzu-emu/yuzu) | [Site](https://yuzu-emu.org/) | Open-source | Oui | 😍😀😫 |
-| Ryujinx | Nintendo Switch | Open-source (PC) | (non disponible) | [GitHub](https://github.com/Ryujinx/Ryujinx) | [Site](https://ryujinx.org/) | Open-source | Oui | 😍😀😫 |
-| Dolphin Emulator | GameCube, Wii | Open-source | [Play Store](https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu) | [GitHub](https://github.com/dolphin-emu/dolphin) | [Site](https://dolphin-emu.org/) | Open-source | Oui | 😍😀😫 |
-| DraStic | Nintendo DS | Payant | [Play Store](https://play.google.com/store/search?q=DraStic&c=apps) |  |  | Proprietary | Oui | 😍😀😫 |
-| My Boy! | Game Boy Advance | Payant | [Play Store](https://play.google.com/store/search?q=My+Boy%21&c=apps) |  |  | Proprietary | Oui | 😍😀😫 |
-| My OldBoy! | Game Boy / Game Boy Color | Payant | [Play Store](https://play.google.com/store/search?q=My+OldBoy%21&c=apps) |  |  | Proprietary | Oui | 😍😀😫 |
-| M64Plus (Mupen64Plus) / M64Plus FZ | Nintendo 64 | Open-source / fork | [Play Store](https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita) | [GitHub](https://github.com/fzurita/mupen64plus-ae) | [Site](https://m64p.github.io/) | Open-source | Oui (var.) | 😍😀😫 |
+<a id="nintendo"></a>
 
-## Sega & Dreamcast
+<a id="nintendo-3ds"></a>
+### Nintendo 3DS
 
-| Émulateur | Plateforme(s) | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
-| --- | --- | --- | --- | --- | --- | --- | ---: | --- |
-| Flycast | Dreamcast, Naomi | Open-source | [Play Store](https://play.google.com/store/apps/details?id=com.flycast.emulator) | [GitHub](https://github.com/flyinghead/flycast) | [Site](https://flycast.dev/) | Open-source | Oui | 😍😀😫 |
-| Reicast | Dreamcast | Open-source | (non disponible) | [GitHub](https://github.com/skmp/reicast-emulator) | [GitHub (archive)](https://github.com/skmp/reicast-emulator) | Open-source | Oui (var.) | 😍😀😫 |
-| Redream | Dreamcast | Fermé / free & pay options | (non disponible) |  | [Site](https://www.redream.io/) | Proprietary | Oui | 😍😀😫 |
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| Citra | Gratuit | (N/A) | [GitHub](https://github.com/weihuoya/citra) | [Site](https://citra-emu.org/) | Gratuit | Oui |  |
+| Citra Enhanced | Fork Gratuit | (N/A) | [GitHub](https://github.com/ihaveamac/citra-enhanced) | [GitHub (Mandarine)](https://github.com/mandarine3ds/mandarine) | Gratuit | Oui |  |
 
-## Arcade / Multi-arcade
+<a id="nintendo-switch"></a>
+### Nintendo Switch
 
-| Émulateur | Plateforme(s) | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
-| --- | --- | --- | --- | --- | --- | --- | ---: | --- |
-| MAME4droid / MAME | Arcade (MAME) | Open-source | (non disponible) |  | [Site](https://www.mamedev.org/) | Open-source | Oui | 😍😀😫 |
-| FinalBurn Neo (FBNeo) | Arcade / CPS / NeoGeo | Open-source core | (non disponible) | [GitHub](https://github.com/finalburnneo/FBNeo) | [libretro](https://www.libretro.com/) | Open-source | Oui | 😍😀😫 |
+- ProdKeys & Firmwares : https://prodkeys.net/prod-keys/
 
-## Handhelds (GBA / PSP / Others)
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| Yuzu | Gratuit (PC) | (N/A) | [GitHub](https://github.com/yuzu-emu/yuzu) | [Site](https://yuzu-emulator.net/download/) | Gratuit | Oui | 😍 |
+| Ryujinx | Gratuit (PC) | (N/A) | [GitHub](https://github.com/Ryujinx/Ryujinx) | [Site](https://ryujinx.app/) | Gratuit | Oui |  |
 
-| Émulateur | Plateforme(s) | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
-| --- | --- | --- | --- | --- | --- | --- | ---: | --- |
-| PPSSPP | PSP | Open-source | [Play Store](https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp) | [GitHub](https://github.com/hrydgard/ppsspp) | [Site](https://www.ppsspp.org/) | Open-source | Oui | 😍😀😫 |
-| PPSSPP Gold | PSP (donation version) | Payant | (non disponible) |  | [Buy PPSSPP Gold](https://www.ppsspp.org/buygold) | Proprietary | Oui | 😍😀😫 |
-| GBA.emu / mGBA | Game Boy Advance | Open-source / ports | (non disponible) | [GitHub](https://github.com/endrift/mGBA) | [Site](https://mgba.io/) | Open-source | Oui | 😍😀😫 |
-| My Boy! | Game Boy Advance | Payant | [Play Store](https://play.google.com/store/search?q=My+Boy%21&c=apps) |  |  | Proprietary | Oui | 😍😀😫 |
+<a id="nintendo-gamecube-wii"></a>
+### GameCube / Wii
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| Dolphin Emulator | Gratuit | [Play Store](https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu) | [GitHub](https://github.com/dolphin-emu/dolphin) | [Site](https://dolphin-emu.org/) | Gratuit | Oui |  |
+
+<a id="nintendo-ds"></a>
+### Nintendo DS
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| DraStic | Payant | [Play Store](https://play.google.com/store/search?q=DraStic&c=apps) |  |  | Payant | Oui |  |
+
+<a id="nintendo-gba"></a>
+### Game Boy Advance (GBA)
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| My Boy! | Payant | [Play Store](https://play.google.com/store/search?q=My+Boy%21&c=apps) |  |  | Payant | Oui |  |
+| GBA.emu / mGBA | Gratuit / ports | (N/A) | [GitHub](https://github.com/endrift/mGBA) | [Site](https://mgba.io/) | Gratuit | Oui |  |
+
+<a id="nintendo-gbc"></a>
+### Game Boy / Game Boy Color
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| My OldBoy! | Payant | [Play Store](https://play.google.com/store/search?q=My+OldBoy%21&c=apps) |  |  | Payant | Oui |  |
+
+<a id="nintendo-64"></a>
+### Nintendo 64
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| M64Plus (Mupen64Plus) / M64Plus FZ | Gratuit / fork | [Play Store](https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita) | [GitHub](https://github.com/fzurita/mupen64plus-ae) | [Site](https://m64p.github.io/) | Gratuit | Oui (var.) |  |
+
+## Sega
+
+<a id="sega"></a>
+
+<a id="dreamcast"></a>
+### Dreamcast
+
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| Flycast | Gratuit | [Play Store](https://play.google.com/store/apps/details?id=com.flycast.emulator) | [GitHub](https://github.com/flyinghead/flycast) | [Site](https://flycast.dev/) | Gratuit | Oui |  |
+| Reicast | Gratuit | (N/A) | [GitHub](https://github.com/skmp/reicast-emulator) | [GitHub (archive)](https://github.com/skmp/reicast-emulator) | Gratuit | Oui (var.) |  |
+| Redream | Fermé / Gratuit & pay options | (N/A) |  | [Site](https://www.redream.io/) | Payant | Oui |  |
 
 ## Multi-system / Frontends
 
-| Émulateur | Plateforme(s) | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
-| --- | --- | --- | --- | --- | --- | --- | ---: | --- |
-| RetroArch | Multi (cores libretro) | Open-source frontend | [Play Store](https://play.google.com/store/apps/details?id=com.retroarch) | [GitHub](https://github.com/libretro/RetroArch) | [Site](https://www.retroarch.com/) | Open-source | Oui | 😍😀😫 |
+<a id="multi-frontends"></a>
+### Multi (libretro / frontends)
 
-## Classic computers & Adventure
+| Émulateur | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
+| --- | --- | --- | --- | --- | --- | ---: | --- |
+| RetroArch | Gratuit frontend | [Play Store](https://play.google.com/store/apps/details?id=com.retroarch) | [GitHub](https://github.com/libretro/RetroArch) | [Site](https://www.retroarch.com/) | Gratuit | Oui |  |
 
-| Émulateur | Plateforme(s) | Type | Play Store | GitHub | Site | Licence | Maintenu ? | Evaluation |
-| --- | --- | --- | --- | --- | --- | --- | ---: | --- |
-| ScummVM | Aventure (SCUMM et autres) | Open-source | [Play Store](https://play.google.com/store/apps/details?id=org.scummvm.scummvm) | [GitHub](https://github.com/scummvm/scummvm) | [Site](https://www.scummvm.org/) | Open-source | Oui | 😍😀😫 |
-| VICE (C64) | Commodore 64 | Open-source | (non disponible) |  | [Site](https://vice-emu.sourceforge.io/) | Open-source | Oui | 😍😀😫 |
-| Stella (Atari 2600) | Atari 2600 | Open-source | (non disponible) |  | [Site](https://stella-emu.github.io/) | Open-source | Oui | 😍😀😫 |
+---
 
 Notes:
-- Les colonnes Play Store / GitHub / Site utilisent les URLs connues du dépôt (quand disponibles). Les entrées marquées "(non disponible)" signifient qu'aucune fiche Play Store précise n'a été trouvée dans les sources du dépôt.
+- Les colonnes Play Store / GitHub / Site utilisent les URLs connues du dépôt (quand disponibles). Les entrées marquées "(N/A)" signifient qu'aucune fiche Play Store précise n'a été trouvée dans les sources du dépôt.
 - Evaluation : 😍 : Must have | 😀 : Correcte | 😫 : A éviter
 
