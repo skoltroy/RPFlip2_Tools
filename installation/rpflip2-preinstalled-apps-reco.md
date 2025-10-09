@@ -27,7 +27,7 @@
 | ❌ | UNCIV | Version mobile de Civilization : bon pour parties au tour par tour sur petit écran. | 4.10.11 | [Détails](rpflip2-preinstalled-apps.md#unciv) |
 | ❌ | VCMI | Moteur Heroes III open-source, nécessite les fichiers du jeu original. | 1.4.2 | [Détails](rpflip2-preinstalled-apps.md#vcmi) |
 | ✅ | Aether SX2 | Emulateur PS2 moderne et prometteur, bonnes performances sur matériel récent. | 1.5.4248 | [Détails](rpflip2-preinstalled-apps.md#aether-sx2) |
-| ✅ | OWN Nighly | Outil de navigation/gestion de fichiers en version nightly — fonctionnalités expérimentales. | 0.48 | [Détails](rpflip2-preinstalled-apps.md#own-nighly) |
+| ❌ | OWN Nighly | OpenMW est un moteur de jeu open source qui réimplémente celui qui animait Morrowind. | 0.48 | [Détails](rpflip2-preinstalled-apps.md#own-nighly) |
 | ❌ | OpenBOR | Moteur pour beat'em up, utile pour scènes/romhacks rétro. | 1.0.0 | [Détails](rpflip2-preinstalled-apps.md#openbor) |
 | ❌ | SCUMM VM | Lecteur stable pour aventures classiques (LucasArts, Sierra). | 2.8.0 | [Détails](rpflip2-preinstalled-apps.md#scumm-vm) |
 | ❌ | Serious SAM TFE | Portage du FPS Serious Sam — fun mais demande ressources pour bien tourner. | 1.05.2 | [Détails](rpflip2-preinstalled-apps.md#serious-sam-tfe) |

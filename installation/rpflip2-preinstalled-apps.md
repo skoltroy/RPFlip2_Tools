@@ -182,7 +182,7 @@
 
 ## OWN Nighly 
   * Version : 0.48
-  * Description : Version nocturne d’Open World Navigation, outil de navigation et gestion de fichiers pour Android.
+  * Description : OpenMW est un moteur de jeu open source et gratuit qui réimplémente celui qui animait Morrowind, le jeu de rôle en monde ouvert de Bethesda Softworks (2002).
   * Url : https://rocka.gitlab.io/fdroid-website/en/packages/is.xyz.omw_nightly/
   * Playstore : (non disponible)
   * Github : https://gitlab.com/rocka/omw
