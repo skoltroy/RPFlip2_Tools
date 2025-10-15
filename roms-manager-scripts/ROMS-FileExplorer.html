@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explorer - recursive folder browser</title>
+  <!-- simple folder favicon (inline SVG data URI) -->
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23FDBA12' d='M10 4l2 2h6a1 1 0 0 1 1 1v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5z'/><path fill='%23F59E0B' d='M3 8v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9a1 1 0 0 0-1-1H10L8 6H5a2 2 0 0 0-2 2z' opacity='0.9'/></svg>">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    html,body{height:100%}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial}
+    .app{display:flex;height:100vh}
+    .left{width:360px;border-right:1px solid #eee;overflow:auto;padding:12px}
+    .right{flex:1;overflow:auto;padding:12px}
+    .node{cursor:pointer;padding:6px;border-radius:4px}
+    .node:hover{background:#f8f9fa}
+    .node.active{background:#e9f2ff}
+    .indent{margin-left:12px}
+    .overlay{position:fixed;inset:0;background:rgba(255,255,255,0.85);display:none;align-items:center;justify-content:center;z-index:2000}
+    .folder-icon{color:#007bff;margin-right:6px}
+    .folder-icon.sub{color:#6c757d}
+  .parent-link{color:#6c757d}
+  </style>
+</head>
+<body>
+  <div class="d-flex justify-content-between align-items-center p-2 border-bottom">
+    <div><h5 class="mb-0">ROMS File Explorer</h5><small class="text-muted">Client-only, File System Access API + webkitdirectory fallback</small></div>
+    <div>
+      <button id="pick" class="btn btn-sm btn-primary">Pick folder</button>
+      <button id="pickFallback" class="btn btn-sm btn-outline-secondary">Load via file selector</button>
+    </div>
+  </div>
+
+  <div class="app">
+    <div class="left">
+      <div class="mb-2">
+        <input id="folderFilter" class="form-control form-control-sm" placeholder="Filter folders (left pane)" />
+        <div class="form-text small text-muted">Type to filter folder names shown on the left</div>
+      </div>
+      <div class="mb-2">
+        <input id="excludeExt" class="form-control form-control-sm" placeholder="Exclude extensions (comma separated) e.g. .txt,.log" />
+        <div class="form-text small text-muted">Extensions to hide from viewer and exclude from counts</div>
+      </div>
+      <div id="treeRoot">No folder loaded</div>
+    </div>
+    <div class="right">
+      <div class="d-flex gap-2 mb-2">
+        <input id="filter" class="form-control form-control-sm" placeholder="Filter filenames" />
+        <div><span id="count" class="text-muted small">0 items</span></div>
+      </div>
+      <div id="fileList"></div>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"><div><div class="spinner-border text-primary" role="status"></div><div id="overlayText" class="mt-2 text-center small text-muted">Loading...</div></div></div>
+
+<script>
+(async function(){
+  const overlay = $('#overlay');
+  function showOverlay(msg){ $('#overlayText').text(msg||'Loading...'); overlay.css('display','flex'); }
+  function hideOverlay(){ overlay.hide(); }
+
+  let rootNode = null; // tree root
+  let nodeMap = new Map(); // path -> node
+  let currentPath = ''; // path key for selected node
+
+  function extOf(name){ const i = name.lastIndexOf('.'); return i>=0?name.slice(i).toLowerCase():'[no-ext]'; }
+  function formatSize(n){ if (n==null||n==='') return ''; if (n===0) return '0 B'; const num = Number(n)||0; if (num<1024) return num+' B'; if (num<1024*1024) return (num/1024).toFixed(1)+' KB'; return (num/(1024*1024)).toFixed(2)+' MB'; }
+
+  function renderTree(){
+    const $root = $('#treeRoot').empty();
+    if (!rootNode) { $root.text('No folder loaded'); return; }
+    const folderQ = $('#folderFilter').val().trim().toLowerCase();
+    const excludeList = ($('#excludeExt').val()||'').split(',').map(s=>s.trim().toLowerCase()).filter(Boolean);
+    function isExcludedFileEntry(f){ const e = f.fullPath ? extOf(f.fullPath) : (f.name? extOf(f.name) : ''); return excludeList.includes(e); }
+
+    function nodeMatchesFilter(node){ if (!folderQ) return true; return (node.name||'').toLowerCase().includes(folderQ); }
+
+    function renderNode(node, depth){
+      if (!nodeMatchesFilter(node) && !node.children.some(c=>nodeMatchesFilter(c))) return; // prune
+      // show folder icon and do not count root's files in display
+      // count files excluding excluded extensions
+  const displayFiles = node.path === '' ? 0 : (node.files? node.files.filter(f=>!isExcludedFileEntry(f)).length : 0);
+  const iconClass = depth>0 ? 'folder-icon sub' : 'folder-icon';
+  const $n = $('<div class="node"></div>'); $n.html('<span class="'+iconClass+'">📁</span>' + $('<div/>').text(node.name||'(root)').html() + (displayFiles?(' — '+displayFiles+' files'):'' ) );
+      $n.css('padding-left', (depth*12)+'px');
+      $n.toggleClass('active', node.path===currentPath);
+      $n.on('click', function(e){ e.stopPropagation(); selectNode(node.path); });
+      $root.append($n);
+      if (node.children){
+        node.children.forEach(ch => renderNode(ch, depth+1));
+      }
+    }
+    renderNode(rootNode, 0);
+  }
+
+  function selectNode(path){ currentPath = path; renderTree(); const node = nodeMap.get(path); renderFiles(node); }
+
+  function renderFiles(node){
+    const $list = $('#fileList').empty();
+    if (!node){ $list.append('<div class="text-muted small">No folder selected</div>'); $('#count').text('0 items'); return; }
+  const excludeList = ($('#excludeExt').val()||'').split(',').map(s=>s.trim().toLowerCase()).filter(Boolean);
+  function isExcludedFileEntry(f){ const e = f.fullPath ? extOf(f.fullPath) : (f.name? extOf(f.name) : ''); return excludeList.includes(e); }
+  const files = node.allFiles || [];
+    const q = $('#filter').val().trim().toLowerCase();
+  const items = files.filter(f => !isExcludedFileEntry(f) && (!q || f.name.toLowerCase().includes(q)));
+    $('#count').text(items.length + ' items');
+    if (!items.length){ $list.append('<div class="text-muted">No files</div>'); return; }
+    const $ul = $('<div class="list-group"></div>');
+    items.forEach(it=>{
+      // Determine full path and parent reliably for both fallback and handle modes
+      let fullPath = it.fullPath || (it.name && it.name.indexOf('/') !== -1 ? it.name : null);
+      let parent = '';
+      let displayName = it.name;
+      if (fullPath){ const parts = fullPath.split('/'); displayName = parts[parts.length-1]; parent = parts.slice(0, -1).join('/'); }
+      if (!parent && it.parentName) parent = it.parentName;
+      if (!displayName && it.name) displayName = it.name;
+      const icon = getFileIcon(displayName);
+      // build a two-column row: left = icon + name + size, right = parent (muted)
+      const left = '<div class="d-flex align-items-center"><span class="me-2">'+icon+'</span><div><div>'+escapeHtml(displayName)+'</div><div class="small text-muted">'+formatSize(it.size)+'</div></div></div>';
+      let $right;
+      if (parent){
+        // show parent as muted text but do not make it clickable (clickable behavior removed)
+        $right = $('<div class="text-end small parent-link" style="min-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">📁 '+escapeHtml(parent)+'</div>');
+      } else {
+        $right = $('<div style="min-width:160px"></div>');
+      }
+      const $item = $('<div class="list-group-item d-flex justify-content-between align-items-center"></div>');
+      $item.append(left);
+      $item.append($right);
+      $ul.append($item);
+    });
+    $list.append($ul);
+  }
+
+  function getFileIcon(name){
+    const e = extOf(name);
+    if (!e) return '📄';
+    if (['.png','.jpg','.jpeg','.gif','.webp','.bmp'].includes(e)) return '🖼️';
+    if (['.mp3','.wav','.ogg','.flac'].includes(e)) return '🎵';
+    if (['.mp4','.mkv','.avi','.mov'].includes(e)) return '🎬';
+    if (['.txt','.md','.log'].includes(e)) return '📄';
+    if (['.zip','.rar','.7z','.tar','.gz'].includes(e)) return '🗜️';
+    if (['.iso','.img'].includes(e)) return '💿';
+    if (['.exe','.bat','.sh'].includes(e)) return '⚙️';
+    if (['.pdf'].includes(e)) return '📕';
+    if (['.html','.htm','xml','xhtml'].includes(e)) return '🌐';
+    return '📄';
+  }
+
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+  // Build recursive tree from File objects array (webkitdirectory fallback)
+  function buildTreeFromFiles(files){
+    const root = { name:'', path:'', children:[], files:[], allFiles:[] };
+    nodeMap = new Map(); nodeMap.set('', root);
+    for (const f of files){
+      const rel = f.webkitRelativePath || f.name; const parts = rel.split('/');
+      let cur = root; cur.allFiles.push({ name: parts.join('/'), size: f.size });
+        for (let i=0;i<parts.length-1;i++){
+        const part = parts[i];
+        let ch = cur.children.find(c=>c.name===part);
+        if (!ch){ ch = { name: part, path: cur.path? (cur.path+'/'+part) : part, children:[], files:[], allFiles:[] , parent:cur}; cur.children.push(ch); nodeMap.set(ch.path, ch); }
+        cur = ch;
+        cur.allFiles.push({ name: parts.slice(i+1).join('/'), size: f.size });
+      }
+      // file in current cur
+      const fileName = parts[parts.length-1]; cur.files.push({ name: fileName, size: f.size, fullPath: parts.join('/') });
+      // also set parentName for quick reference
+      cur.files[cur.files.length-1].parentName = cur.path || cur.name || '';
+    }
+    root.allFiles = root.allFiles.concat(...root.children.map(c=>c.allFiles));
+    rootNode = root; return root;
+  }
+
+  async function buildTreeFromHandle(dirHandle){
+    // walk recursively
+    const root = { name: dirHandle.name||'', path: '', children:[], files:[], allFiles:[] };
+    nodeMap = new Map(); nodeMap.set('', root);
+    async function walk(handle, node){
+      for await (const [name, h] of handle.entries()){
+        if (h.kind === 'file'){
+          try{ const f = await h.getFile(); node.files.push({ name, size: f.size, handle: h }); node.allFiles.push({ name, size: f.size, handle: h }); }
+          catch(e){ console.debug('file read fail', e); }
+        } else if (h.kind === 'directory'){
+          const child = { name, path: node.path? (node.path+'/'+name) : name, children:[], files:[], allFiles:[], parent: node, handle: h };
+          node.children.push(child); nodeMap.set(child.path, child);
+          await walk(h, child);
+          // accumulate child files into node.allFiles
+          node.allFiles = node.allFiles.concat(child.allFiles);
+        }
+      }
+    }
+    // assign fullPath and parentName for files based on node path
+    function assignFileMeta(node){
+      node.files = node.files.map(f=> ({ name: f.name, size: f.size, fullPath: node.path? (node.path+'/'+f.name) : f.name, parentName: node.path || node.name || '' }));
+      node.children.forEach(c=> assignFileMeta(c));
+    }
+    await walk(dirHandle, root);
+    assignFileMeta(root);
+    rootNode = root; nodeMap.set('', root); return root;
+  }
+
+  // Pick handlers
+  $('#pick').on('click', async function(){
+    if (!window.showDirectoryPicker){ alert('showDirectoryPicker not available in this browser. Use Load via file selector.'); return; }
+    try{ showOverlay('Scan'); const dh = await window.showDirectoryPicker(); await buildTreeFromHandle(dh); renderTree(); selectNode(''); hideOverlay(); }
+    catch(e){ hideOverlay(); console.error(e); alert('Cancelled or error: '+ (e && e.message)); }
+  });
+
+  // Load folder where this page is located (best-effort): browsers restrict direct access, so we ask user to pick the folder in the dialog
+  $('#pickFallback').text('Load page folder (choose when prompted)');
+  $('#pickFallback').on('click', function(){
+    if (location.protocol === 'file:'){
+      alert('Due to browser security the page cannot access its folder automatically. Please choose the folder that contains explorer.html in the dialog that will open.');
+    }
+    const $inp = $('<input type="file" webkitdirectory multiple style="display:none">');
+    $inp.on('change', function(e){ const files = Array.from(e.target.files||[]); showOverlay('Scanning'); setTimeout(()=>{ buildTreeFromFiles(files); renderTree(); selectNode(''); hideOverlay(); }, 50); });
+    $(document.body).append($inp); $inp.trigger('click');
+  });
+
+  $('#filter').on('input', function(){ const node = nodeMap.get(currentPath); renderFiles(node); });
+
+  // prefill exclude extensions
+  $('#excludeExt').val('.txt,.html');
+
+})();
+</script>
+</body>
+</html>
